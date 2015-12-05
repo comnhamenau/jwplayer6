@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ban dang xem phim tai website uaylu</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+			<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+</head>
+<body>
+	<div id="hdoplayer"></div>
+<script src="jwplayer/mjwp6.js"></script>
+<script type="text/javascript">
+								var timestamp = new Date().getTime();
+								var ptag = "http://blueserving.com/vast.xml?key=30415cfb57338c8748f07ca9c377485e&genre=&country=&r=" + timestamp;
+								jwplayer("hdoplayer").setup({
+									   playlist: [
+									            {
+									            	//file:'http://blueseed.tv/assets/video/vietnam_natural_beauty-p1.mp4',
+									            	file:'https://www.youtube.com/watch?v=b06s58XIGCg',									            	
+									            	adschedule: {
+									                    'adbreak1': {
+									                        'offset': "pre",
+									                        'tag': "http://cdn.blueseed.tv/vod2015/static/08/vast_enchanteur.php"
+									                    },
+									                  
+										                'adbreak2': {
+										                    'offset': '20',
+										                    'tag': "http://blueserving.com/vast.xml?key=0b4b81830289f82c3cf9cafbc5262705"
+										                },
+										                'adbreak3': {
+										                    'offset': '30',
+										                    'tag': "http://blueserving.com/vast.xml?key=0b4b81830289f82c3cf9cafbc5262705"
+										                },
+										                'adbreak4':{
+															   offset: '110',
+														       tag: 'http://blueserving.com/vast.xml?key=d2c30b559a9264750e4faecc8fcdb6da'
+														},
+														
+									                    overlay: {
+									                        offset:'50',
+									                        tag: 'http://blueserving.com/vast.xml?key=8c9944a1071c476bc42d3768400bcb44',
+									                        type:"nonlinear"
+									                    },
+									                    
+									            	}
+									            }
+									   ],
+									   sharing: {
+									code: encodeURI(''),
+									link: ''
+									},
+									  startparam: "ec_seek",
+									  autostart: true,
+									  advertising: {
+										//client: 'vast',
+										client:"googima",
+										skipoffset:5,
+										admessage: 'Ads By BlueSeed in XX seconds',
+										schedule: {
+											'adbreak1': {
+						                        'offset': "1",
+						                        'tag': "vasttest.xml"
+						                    },
+						                  
+							                'adbreak2': {
+							                    'offset': '20',
+							                    'tag': "http://blueserving.com/vast.xml?key=d2c30b559a9264750e4faecc8fcdb6da"
+							                },
+							                'adbreak3': {
+							                    'offset': '25',
+							                    'tag': "http://blueserving.com/vast.xml?key=0b4b81830289f82c3cf9cafbc5262705"
+							                },
+							                'adbreak4':{
+												   offset: '301',
+											       tag: 'http://blueserving.com/vast.xml?key=e71177fb4cca2018c23506190d5b8d62'
+											},
+											    
+									      	overlay: {
+							                        offset:'50',
+							                        tag: 'http://blueserving.com/vast.xml?key=8c9944a1071c476bc42d3768400bcb44',
+							                        type:"nonlinear"
+						                    },
+								                    
+										}
+									   },
+									
+									    plugins: {
+										   "http://lab.blueserving.com/plugins/bs_pause6.swf": {
+												"urlvast": ptag,
+										   }
+									   }, 
+									   
+									   primary: "html5",
+									   aspectratio: "16:9",
+									   stretching: "fill",
+									   height: '520',
+								       width: '1024',
+									});
+								</script>
+
+									<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="http://cameronspear.com/downloads/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+
+</body>
+</html>
+
